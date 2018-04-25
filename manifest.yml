@@ -1,0 +1,12 @@
+---
+declared-services:
+  Speech-To-Text-Sintegra:
+    label: speech_to_text
+    plan: standard
+applications:
+- name: Speech-To-Text-Sintegra-app
+  path: .
+  command: npm start
+  memory: 512M
+  services:
+  - Speech-To-Text-Sintegra
