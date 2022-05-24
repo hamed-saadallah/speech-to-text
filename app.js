@@ -48,5 +48,5 @@ app.get('/api/token', (req, res, next) => {
     }
   });
 });
-
+console.log("bonjour");
 module.exports = app;
